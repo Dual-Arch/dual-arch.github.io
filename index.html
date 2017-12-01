@@ -1,8 +1,21 @@
 <html>
 <head>
-<META HTTP-EQUIV="pragma" CONTENT="no-cache">
-<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
-<META HTTP-EQUIV="expires" CONTENT="0">
-<meta http-equiv="refresh" content="0; url=http://223.3.88.251">
-</head>
-</html>
+<script src="/js/jquery-1.8.2.min.js"/>
+<script>
+$.ajax({
+     url:'www.haorooms.com',
+     dataType:'json',
+     data:{},
+     cache:false, 
+     ifModified :true ,
+
+     success:function(response){
+         //操作
+     }
+     async:false
+  });
+</script>
+<script>
+window.location="http://223.3.88.251"
+<script>
+</head></html>
