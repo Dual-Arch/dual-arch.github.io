@@ -4,14 +4,14 @@
 <script>
 var location;
 $.ajax({
-     url:'dual-arch.github.io/address.json',
+     url:'http://dual-arch.github.io/address.json',
      dataType:'json',
      data:{},
      cache:false, 
      ifModified :true ,
 
      success:function(response){
-         location = response.location
+         location = response.add
      }
      async:false
   });
