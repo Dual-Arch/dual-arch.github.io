@@ -2,7 +2,6 @@
 <head>
 <script src="/js/jquery-1.8.2.min.js"/>
 <script>
-var location;
 $.ajax({
      url:'http://dual-arch.github.io/address.json',
      dataType:'json',
@@ -11,12 +10,12 @@ $.ajax({
      ifModified :true ,
 
      success:function(response){
-         location = response.add
+        window.location.href="http:\\" + response.add;
      }
      async:false
   });
 </script>
 <script>
-window.location.href="http:\\" + location
+
 </script>
 </head></html>
