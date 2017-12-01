@@ -10,7 +10,7 @@ $.ajax({
      ifModified :true ,
 
      success:function(response){
-        alert(response.add);
+        window.location.href = "http://" + response.add
      }
   });
 </script>
