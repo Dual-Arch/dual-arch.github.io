@@ -2,20 +2,21 @@
 <head>
 <script src="/js/jquery-1.8.2.min.js"/>
 <script>
+var location;
 $.ajax({
-     url:'www.haorooms.com',
+     url:'dual-arch.github.io',
      dataType:'json',
      data:{},
      cache:false, 
      ifModified :true ,
 
      success:function(response){
-         //操作
+         location = response.location
      }
      async:false
   });
 </script>
 <script>
-window.location.href="http://www223.3.88.251"
+window.location.href="http:\\" + location
 </script>
 </head></html>
